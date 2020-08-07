@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("/public/fonts/Roboto_Slab/RobotoSlab-Regular.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "RobotoSlab-black";
+  src: url("/public/fonts/Roboto_Slab/RobotoSlab-Black.ttf");
+  font-size: small;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RobotoSlab-bold";
+  src: url("/public/fonts/Roboto_Slab/RobotoSlab-Bold.ttf");
+  font-size: medium;
+  font-weight: 600;
+}
+
+html, body {
+  height: 100%;
+  background-color: #34cd34;
+  margin:0px;
+  padding:0px;
+  font-family: "RobotoSlab";
+
+}
+
+
+.navbar-default {
+  border: none;
+}
+
+.container-fluid {
+  background-color: #34cd34;
+}
+
+.navbar-custom {
+  background-color: #34cd34;
+  padding-bottom: 6px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+  color: black;
+  font-family: "RobotoSlab-black";
+  font-size: xx-large;
+  font-weight: 900;
+  margin: 0px;
+}
+
+.navbar-brand {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.navbar-custom .nav-item {
+  color: black;
+  font-family: "RobotoSlab-bold";
+  font-size: 2vW;
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+a.nav-link {
+  color: #34cd34;
+  margin: -2px;
+}
+
+button.navbar-toggler{
+    font-size: 3vW;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(52,52,205, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  
+}
+
+button:focus {
+  outline: 0px;
+}
+
+button:hover,
+button:active {
+  content: "";
+  box-shadow: inset 0 0 0 2px black;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+h1 {
+    display:flexbox;
+  font-size: 4vw;
+  background-color: black;
+  color: #34cd34;
+  text-align: left;
+  font-family: "RobotoSlab-black";
+  border-color: #34cd34;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin: 0px;
+}
+
+h2 {
+  font-family: "RobotoSlab-bold";
+  text-align: center;
+  font-size: 8vW;
+}
+
+a:hover::before {
+  content: "";
+  box-shadow: inset 0 0 0 2px black;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  /*color: black;
+  background-color: #34cd34;
+  border: 2px solid black;
+  overflow: hidden;*/
+}
+
+a {
+  display: inline-block;
+  position: relative;
+}
+
+p{
+    text-align: center;
+    font-family: "RobotoSlab";
+    font-size: 2vW;
+}
+
+.borito {
+    background-color: #34cd34;
+   
+}
+
+/*Footer*/
+.footer {
+  background-color: #303036;
+  color: #d3d3d3;
+  height: 400px;
+  position: relative;
+
+}
+.footer .footer-content{
+  border:2px solid aquamarine;
+  height: 350px;
+
+}
+
+.footer .footer-bottom{
+  background-color: #343a40;
+  color: grey;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  padding-top: 20px;
+  bottom:0px;
+  left:0px;
+  
+}

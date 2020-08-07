@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  
+  <style>
+    img {
+      width: 100%;
+    }
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+  <nav class="navbar navbar-custom">
+    <a class="navbar-brand" href="/index.html"><img src="/img/gombnakvalo.jpg" alt="DEÁK GÉP"
+        style="width:180px; height:120px;"></a>
+    <div>
+      <h2>DEÁK-GÉP</h2>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      
+      <div class="navbar-nav">
+        <a  class="nav-item nav-link active" href="/index.html">KEZDŐOLDAL</a>
+        
+        <a  class="nav-item nav-link" href="/szolg.html">SZOLGÁLTATÁSOK</a>
+        <a  class="nav-item nav-link" href="/kepek.html">KÉPEK<span
+          class="sr-only">(current)</span></a>
+        <a  class="nav-item nav-link" href="/kapcsolat.html">KAPCSOLAT ÉS AJÁNLATKÉRÉS</a>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <h1>KÉPEK</h1>
+    <div>
+      <script type="text/javascript">
+        var folder = "/public/uploads";
+        $.ajax({
+            url: folder,
+            success: function(data) {
+                $(data).find("a").attr("href", function(i, val) {
+                    $("body").append("<img src='" + folder + '/' + val + "'>");
+                });
+            }
+        });
+    </script>
+    </div>
+
+  <div class="footer">
+    <div class= "footer-content">
+      <div class= "footer-section"></div>
+      <div class= "footer-section"></div>
+      <div class= "footer-section"></div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; Designed by Zsolt Hornyák
+    </div>
+  </div>
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
